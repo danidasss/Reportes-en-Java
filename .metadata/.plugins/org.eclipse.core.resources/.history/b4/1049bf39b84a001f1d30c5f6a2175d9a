@@ -1,0 +1,130 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="Blank_A4" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="578e5ac9-6aa9-4eec-af4a-3f49c3474ac6">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="cmVnaXN0cm9lc3R1ZGlhbnRlcy5lc3R1ZGlhbnRlcyBBUyAsODAsMzIsNTQxNDIxNGEtNWFlMC00&#xa;NDI3LTgwZmQtMjdhMmE3YzVhOWRlOw=="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="registroestudiantes"/>
+	<query language="SQL"><![CDATA[SELECT id,
+	nombre,
+	apellido,
+	edad,
+	ci,
+	id_direccion,
+	estado_civil,
+	sexo,
+	numero_escuela
+FROM registroestudiantes.estudiantes]]></query>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estudiantes"/>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estudiantes"/>
+	</field>
+	<field name="apellido" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="apellido"/>
+		<property name="com.jaspersoft.studio.field.label" value="apellido"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estudiantes"/>
+	</field>
+	<field name="edad" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="edad"/>
+		<property name="com.jaspersoft.studio.field.label" value="edad"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estudiantes"/>
+	</field>
+	<field name="ci" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ci"/>
+		<property name="com.jaspersoft.studio.field.label" value="ci"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estudiantes"/>
+	</field>
+	<field name="id_direccion" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_direccion"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_direccion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estudiantes"/>
+	</field>
+	<field name="estado_civil" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estado_civil"/>
+		<property name="com.jaspersoft.studio.field.label" value="estado_civil"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estudiantes"/>
+	</field>
+	<field name="sexo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="sexo"/>
+		<property name="com.jaspersoft.studio.field.label" value="sexo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estudiantes"/>
+	</field>
+	<field name="numero_escuela" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="numero_escuela"/>
+		<property name="com.jaspersoft.studio.field.label" value="numero_escuela"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estudiantes"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="80" splitType="Stretch">
+		<element kind="staticText" uuid="ba86cd4a-4c96-4f3e-9867-71efea8bc05d" x="80" y="0" width="400" height="79" markup="styled" fontSize="20.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Reporte general de Estudiantes]]></text>
+		</element>
+		<element kind="textField" uuid="cb208436-8ab8-4a64-8177-3c2e6d7c599b" x="-20" y="0" width="100" height="30" fontName="Times New Roman" fontSize="14.0" pattern="MMMMM dd, yyyy" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+	</title>
+	<pageHeader splitType="Stretch"/>
+	<columnHeader height="81" splitType="Stretch">
+		<element kind="staticText" uuid="195f048d-2865-477d-8d69-e9bd42ef0f05" x="-10" y="30" width="40" height="40" markup="styled" fontName="Times New Roman" fontSize="16.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[ID]]></text>
+		</element>
+		<element kind="staticText" uuid="b39c6cd7-e03f-4721-a35c-b25c6e382395" x="40" y="30" width="100" height="40" markup="styled" fontName="Times New Roman" fontSize="16.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[NOMBRES]]></text>
+		</element>
+		<element kind="staticText" uuid="cbb199ce-de25-4292-bb22-393dae7be070" x="140" y="30" width="100" height="40" markup="styled" fontName="Times New Roman" fontSize="16.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[APELLIDOS]]></text>
+		</element>
+		<element kind="staticText" uuid="90481cee-a447-4634-9657-ed5578c5fe21" x="240" y="30" width="50" height="40" markup="styled" fontName="Times New Roman" fontSize="16.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[ EDAD]]></text>
+		</element>
+		<element kind="staticText" uuid="08d04e0e-d243-4383-b966-72f78d9bc92b" x="290" y="30" width="100" height="40" markup="styled" fontName="Times New Roman" fontSize="16.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[CEDULA]]></text>
+		</element>
+		<element kind="staticText" uuid="3553ba59-2839-436a-887b-f676486226bd" x="390" y="30" width="100" height="40" markup="styled" fontName="Times New Roman" fontSize="16.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[E.C.]]></text>
+		</element>
+		<element kind="staticText" uuid="7c76529c-d55d-423d-a090-f50e79e8ad74" x="490" y="30" width="85" height="40" markup="styled" fontName="Times New Roman" fontSize="16.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[ESCUELA]]></text>
+		</element>
+		<element kind="line" uuid="a19de588-75e5-469f-98e6-31ab438d6457" stretchType="NoStretch" x="-13" y="70" width="588" height="1">
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			<pen lineStyle="Solid"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<element kind="textField" uuid="8d76ff2a-9f93-4be9-b6a4-bd10023945fb" x="-10" y="0" width="40" height="30" fontName="Arial" fontSize="14.0" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{id}]]></expression>
+			</element>
+			<element kind="textField" uuid="6edd5a26-5e43-42dd-8f45-e545b90a3a3b" x="40" y="0" width="100" height="30" fontName="Arial" fontSize="14.0" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{nombre}]]></expression>
+			</element>
+			<element kind="textField" uuid="fe516cb3-b4c5-4836-b6a8-632381441cff" x="140" y="0" width="100" height="30" fontName="Arial" fontSize="14.0" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{apellido}]]></expression>
+			</element>
+			<element kind="textField" uuid="9ba5b79e-7899-4ee8-a2aa-70fe1b0aedd6" x="240" y="0" width="50" height="30" fontName="Arial" fontSize="14.0" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{edad}]]></expression>
+			</element>
+			<element kind="textField" uuid="21cd3bb9-03b3-4570-9ebd-56a1db5c2592" x="290" y="0" width="100" height="30" fontName="Arial" fontSize="14.0" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{ci}]]></expression>
+			</element>
+			<element kind="textField" uuid="8eda310e-1783-4495-bebc-343b1e78d88a" x="390" y="0" width="100" height="30" fontName="Arial" fontSize="14.0" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{estado_civil}]]></expression>
+			</element>
+			<element kind="textField" uuid="21128b6d-b22d-4ee7-945b-bcf50102f9e0" x="490" y="0" width="80" height="30" fontName="Arial" fontSize="14.0" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{numero_escuela}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="70" splitType="Stretch">
+		<element kind="textField" uuid="5b6bbe31-3e45-4ad5-a6dc-f30c7fd01b4d" x="231" y="40" width="100" height="30" fontName="Times New Roman" fontSize="14.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+		</element>
+	</pageFooter>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

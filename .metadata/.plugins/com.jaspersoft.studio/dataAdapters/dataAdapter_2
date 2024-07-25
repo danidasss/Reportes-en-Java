@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl">
+	<name>registroestudiantes</name>
+	<driver>com.mysql.jdbc.Driver</driver>
+	<username/>
+	<password/>
+	<url>jdbc:mysql://localhost/registroestudiantes</url>
+	<database/>
+	<savePassword>true</savePassword>
+	<serverAddress/>
+</jdbcDataAdapter>

@@ -1,0 +1,105 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="Estados1" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a8dc9cc7-bee7-4ba6-aacc-0c68b5dfac10">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="cmVnaXN0cm9lc3R1ZGlhbnRlcy5lc3R1ZGlhbnRlcyBBUyAsMjQwLDE3NSxiZWM3YWNiYS0wN2Jj&#xa;LTQ1NWEtYWQ5OC1jOGVhZjQ4MGE2YmU7cmVnaXN0cm9lc3R1ZGlhbnRlcy5kaXJlY2Npb25lcyBB&#xa;UyAsMTE2LDExOSwwNmI3NjljMy1mZGM3LTRkN2ItOTIxOS0xZDk3MWY2OTVhYmU7"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="registroestudiantes"/>
+	<query language="SQL"><![CDATA[SELECT registroestudiantes.direcciones.estado,
+	registroestudiantes.direcciones.ciudad,
+	registroestudiantes.estudiantes.nombre,
+	registroestudiantes.estudiantes.apellido,
+	registroestudiantes.estudiantes.id_direccion
+FROM registroestudiantes.estudiantes
+	INNER JOIN registroestudiantes.direcciones ON 
+	 registroestudiantes.estudiantes.id_direccion = registroestudiantes.direcciones.id]]></query>
+	<field name="estado" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estado"/>
+		<property name="com.jaspersoft.studio.field.label" value="estado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="direcciones"/>
+	</field>
+	<field name="ciudad" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ciudad"/>
+		<property name="com.jaspersoft.studio.field.label" value="ciudad"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="direcciones"/>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estudiantes"/>
+	</field>
+	<field name="apellido" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="apellido"/>
+		<property name="com.jaspersoft.studio.field.label" value="apellido"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estudiantes"/>
+	</field>
+	<field name="id_direccion" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_direccion"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_direccion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="estudiantes"/>
+	</field>
+	<group name="estado">
+		<expression><![CDATA[$F{estado}]]></expression>
+	</group>
+	<group name="Group1">
+		<expression><![CDATA[$F{estado}]]></expression>
+		<groupHeader>
+			<band height="35">
+				<element kind="textField" uuid="8bf761e0-9422-43f2-99ad-8930e31b5833" x="0" y="0" width="560" height="30" fontName="Times New Roman" fontSize="20.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+					<expression><![CDATA[$F{estado}]]></expression>
+				</element>
+				<element kind="line" uuid="343a3e11-6ee4-49a5-add6-740cc6c35153" stretchType="NoStretch" x="-17" y="34" width="137" height="1">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<pen lineStyle="Solid"/>
+				</element>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="26"/>
+		</groupFooter>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="textField" uuid="2fd6d99a-9f2b-4712-b4e2-0b7282d1d398" x="-20" y="0" width="100" height="30" fontName="Times New Roman" fontSize="14.0" pattern="MMMMM dd, yyyy" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+		<element kind="staticText" uuid="244bf0cb-795b-4262-b2f7-1ca3ed4737de" x="80" y="0" width="400" height="79" markup="styled" fontSize="20.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Reporte de estudiantes por estados]]></text>
+		</element>
+	</title>
+	<columnHeader height="50" splitType="Stretch">
+		<element kind="staticText" uuid="2e71283c-81ad-420b-a363-b96ce659ef59" x="280" y="0" width="100" height="40" markup="styled" fontName="Times New Roman" fontSize="16.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[NOMBRES]]></text>
+		</element>
+		<element kind="staticText" uuid="ca08cfa4-8f68-4a35-8d70-2b1ac27470fe" x="410" y="0" width="100" height="40" markup="styled" fontName="Times New Roman" fontSize="16.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[APELLIDOS]]></text>
+		</element>
+		<element kind="staticText" uuid="ab129505-5b0b-4378-94f0-de7674d17b6f" x="-20" y="0" width="180" height="40" markup="styled" fontName="Times New Roman" fontSize="16.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[ESTADOS-CIUDAD]]></text>
+		</element>
+		<element kind="line" uuid="f0b4f051-a750-4381-9625-701f90ff64f9" stretchType="NoStretch" x="-20" y="40" width="594" height="1">
+			<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			<pen lineStyle="Solid"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<element kind="textField" uuid="47269e81-0e8a-4017-ad23-8bae9b92439f" x="1" y="0" width="100" height="30" fontName="Arial" fontSize="14.0" bold="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{ciudad}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3036dad-2626-472e-b510-c0e528afef49"/>
+			</element>
+			<element kind="textField" uuid="8679b9b5-315b-41cb-9c8f-bdd99eae4584" x="280" y="0" width="100" height="30" fontName="Arial" fontSize="14.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{nombre}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a747c2f8-c0e6-4fd4-ba6e-a6149b19828d"/>
+			</element>
+			<element kind="textField" uuid="02f5d057-ebf5-403f-b262-e5216c855eff" x="410" y="0" width="100" height="30" fontName="Arial" fontSize="14.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{apellido}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f6e156c3-0451-4735-b2fe-92308502e503"/>
+			</element>
+		</band>
+	</detail>
+	<pageFooter height="55" splitType="Stretch">
+		<element kind="textField" uuid="67a03aad-ca3a-4174-bbbe-775374006cca" x="230" y="25" width="100" height="30" fontName="Times New Roman" fontSize="14.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+		</element>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;MyReports/Blank_A4.jasper&apos; to &apos;proyecto.jasper&apos;" description="Rename resource &apos;Blank_A4.jasper&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Blank_A4.jasper" name="proyecto.jasper" stamp="1721934002875" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;MyReports/Blank_A4.jrxml&apos; to &apos;proyecto.jrxml&apos;" description="Rename resource &apos;Blank_A4.jrxml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Blank_A4.jrxml" name="proyecto.jrxml" stamp="1721934014280" updateReferences="true"/>
+</session>
